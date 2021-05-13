@@ -2,9 +2,39 @@
 파이썬 관련 각종 환경설정
 
 
-# 가상환경
+# [가상환경]
 
-## Keras 환경설정 예시 - tf_keras라는 이름의 가상환경 (tf-gpu 2.3.0 / keras 2.3.1)
+## Pytorch 환결설정 예시 (설치 당시 기준)
+- 가상환경명 : torch
+- python 3.8.5 / pytorch 1.8.1 - cuda 10.1 cudnn7
+
+conda create -n torch python anaconda
+
+conda install pytorch torchvision torchaudio cudatoolkit=10.1 -c pytorch
+
+### cuda 사용가능 여부 확인
+
+import torch
+
+USE_CUDA = torch.cuda.is_available()
+
+print(USE_CUDA)
+
+device = torch.device('cuda:0' if USE_CUDA else 'cpu')
+
+print('학습을 진행하는 기기:',device)
+
+
+
+### pytorch 홈페이지 설치 url
+- https://pytorch.org/
+
+- 상태 선택하면되는데 10.1 cuda 기준이 없어서 숫자 바꿔서 진행했었음
+
+
+## Keras 환경설정 예시 
+- 가상환경명 : tf_keras
+- tf-gpu 2.3.0 / keras 2.3.1
 conda create -n tf_keras python=3.8.5 anaconda
 
 conda activate tf_keras
