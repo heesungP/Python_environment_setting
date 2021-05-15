@@ -7,7 +7,9 @@
 ## 기타 가상환경 설정
 
 ### 삭제
+
 jupyter kernelspec uninstall 이름 > ipykernel 삭제
+
 conda env remove -n 이름 > env 삭제
 
 
