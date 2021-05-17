@@ -53,6 +53,12 @@ pip install ipykernel
 python -m ipykernel install --user --name tf_keras --display-name "tf_keras"
 pip install keras==2.3.1
 ```
+### CUDA 사용가능 여부 확인
+```
+from tensorflow.python.client import device_lib
+device_lib.list_local_devices()
+```
+
 
 ### ipykernel 주의점
 - install 및 ipykernel 생성할때 가상환경 접속(conda activate 이름) 이후에 진행해야함
