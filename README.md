@@ -19,6 +19,9 @@ conda env remove -n 이름 # env 삭제
 ```
 conda create -n torch python anaconda
 conda install pytorch torchvision torchaudio cudatoolkit=10.1 -c pytorch
+
+pip install ipykernel
+python -m ipykernel install --user --name torch --display-name "torch"
 ```
 ### cuda 사용가능 여부 확인
 ```
