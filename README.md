@@ -15,7 +15,7 @@ conda env remove -n 이름 # env 삭제
 
 ## Pytorch 환결설정 예시 (설치 당시 기준)
 - 가상환경명 : torch
-- python 3.8.5 / pytorch 1.8.1 - cuda 10.1 cudnn7
+- python 3.8.5 / pytorch 1.8.1 - cuda 10.1 cudnn7.6.5
 ```
 conda create -n torch python anaconda
 conda activate torch
