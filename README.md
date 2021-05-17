@@ -17,7 +17,7 @@ conda env remove -n 이름 # env 삭제
 - 가상환경명 : torch
 - python 3.8.5 / pytorch 1.8.1 - cuda 10.1 cudnn7.6.5
 ```
-conda create -n torch python anaconda
+conda create -n torch python=3.8.5 anaconda
 conda activate torch
 
 conda install pytorch torchvision torchaudio cudatoolkit=10.1 -c pytorch
