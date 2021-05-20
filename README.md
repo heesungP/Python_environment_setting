@@ -87,3 +87,6 @@ document
 setInterval(ClickConnect,60000)
 ```
 
+# [CUDA]
+
+## 설치 순서
