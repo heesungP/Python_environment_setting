@@ -91,27 +91,38 @@ setInterval(ClickConnect,60000)
 
 ## 설치 순서
 
-0. Visual Studio 2019 설치
+### 0. Visual Studio 2019 설치
+
 https://visualstudio.microsoft.com/ko/downloads/
+
  -> Community version
+ 
  -> 설치 중 C++ 개발환경만 설정하라고 나와있는데, Python도 같이 선택함
 
-1. 설치 가능한 Cuda version 확인
+### 1. 설치 가능한 Cuda version 확인
+
 https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibility
 
-2. CUDA Toolkit 설치 (v10.1)
+### 2. CUDA Toolkit 설치 (v10.1)
 
-3. cuDNN 설치 (v7.6.5)
+### 3. cuDNN 설치 (v7.6.5)
+
  -> 압축 해제 및 CUDA 설치 경로에 복사, 붙여넣기
+ 
  -> C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v10.1
 
-4. 환경변수 설정
- -> 시스템 환경변수 설정 > 환경변수에서
-  1) 시스템 변수에 CUDA_PATH 2개 확인
-  2) 사용자 변수 Path에 위 cuDNN 복사한 경로 중 bin, lib, include에 대한 경로 추가
+### 4. 환경변수 설정
 
-5. 설치 확인
- -> cmd > nvcc --version
- ![image](https://user-images.githubusercontent.com/67678405/119101269-c1b74f00-ba53-11eb-9a98-f09effca5578.png)
+ -> 시스템 환경변수 설정 > 환경변수에서
+
+  [1] 시스템 변수에 CUDA_PATH 2개 확인
+
+  [2] 사용자 변수 Path에 위 cuDNN 복사한 경로 중 bin, lib, include에 대한 경로 추가
+
+### 5. 설치 확인
+
+-> cmd > nvcc --version
+
+![image](https://user-images.githubusercontent.com/67678405/119101269-c1b74f00-ba53-11eb-9a98-f09effca5578.png)
 
 
