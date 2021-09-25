@@ -126,3 +126,12 @@ https://docs.nvidia.com/deploy/cuda-compatibility/index.html#binary-compatibilit
 ![image](https://user-images.githubusercontent.com/67678405/119101269-c1b74f00-ba53-11eb-9a98-f09effca5578.png)
 
 
+# [기타 모듈]
+
+## ■ 크롬 웹 드라이버
+
+#### 1. 크롬 웹 드라이버 버전에 맞게 py파일과 같은 path에 다운로드 해야함.
+#### 2. 크롬 업데이트시 크롬 웹 드라이버도 버전에 맞게 업데이트 해야함.
+#### 3. 크롬 버전은 설정 - Chrome 정보에서 확인 가능
+#### 4. https://chromedriver.chromium.org/downloads (드라이버 다운로드 위치)
+
